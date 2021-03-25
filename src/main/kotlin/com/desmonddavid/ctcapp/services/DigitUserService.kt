@@ -1,8 +1,8 @@
-package com.desmonddavid.digitCTC.services
+package com.desmonddavid.ctcapp.services
 
-import com.desmonddavid.digitCTC.entities.DigitUser
-import com.desmonddavid.digitCTC.entities.DigitUserRole
-import com.desmonddavid.digitCTC.repositories.DigitUserRepository
+import com.desmonddavid.ctcapp.entities.DigitUser
+import com.desmonddavid.ctcapp.entities.DigitUserRole
+import com.desmonddavid.ctcapp.repositories.DigitUserRepository
 import org.slf4j.LoggerFactory
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority

@@ -1,4 +1,4 @@
-package com.desmonddavid.digitCTC
+package com.desmonddavid.ctcapp
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

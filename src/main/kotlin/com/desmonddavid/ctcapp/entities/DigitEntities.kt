@@ -1,4 +1,4 @@
-package com.desmonddavid.digitCTC.entities
+package com.desmonddavid.ctcapp.entities
 
 import javax.persistence.*
 

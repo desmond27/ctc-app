@@ -1,6 +1,6 @@
-package com.desmonddavid.digitCTC
+package com.desmonddavid.ctcapp
 
-import com.desmonddavid.digitCTC.repositories.DigitUserRepository
+import com.desmonddavid.ctcapp.repositories.DigitUserRepository
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.DisplayName

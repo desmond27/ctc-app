@@ -1,7 +1,7 @@
-package com.desmonddavid.digitCTC.repositories
+package com.desmonddavid.ctcapp.repositories
 
-import com.desmonddavid.digitCTC.entities.DigitUser
-import com.desmonddavid.digitCTC.entities.DigitUserRole
+import com.desmonddavid.ctcapp.entities.DigitUser
+import com.desmonddavid.ctcapp.entities.DigitUserRole
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface DigitUserRepository: JpaRepository<DigitUser, String> {

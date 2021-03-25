@@ -1,4 +1,4 @@
-package com.desmonddavid.digitCTC.controller
+package com.desmonddavid.ctcapp.controller
 
 import org.springframework.security.core.Authentication
 import org.springframework.stereotype.Controller

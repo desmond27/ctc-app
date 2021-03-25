@@ -1,6 +1,6 @@
-package com.desmonddavid.digitCTC.configuration
+package com.desmonddavid.ctcapp.configuration
 
-import com.desmonddavid.digitCTC.services.DigitUserService
+import com.desmonddavid.ctcapp.services.DigitUserService
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
