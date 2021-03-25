@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.desmonddavid</groupId>
-	<artifactId>DigitCTC</artifactId>
+	<artifactId>ctc-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DigitCTC</name>
-	<description>Digit CTC web application</description>
+	<name>CTC App</name>
+	<description>A web application for CTC like competitions</description>
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.4.21</kotlin.version>
