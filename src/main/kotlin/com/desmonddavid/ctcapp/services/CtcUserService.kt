@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.Transactional
 import java.util.ArrayList
 
 @Service
-class DigitUserService(private val digitUserRepository: DigitUserRepository) : UserDetailsService {
+class CtcUserService(private val digitUserRepository: DigitUserRepository) : UserDetailsService {
 
-    private val logger = LoggerFactory.getLogger(DigitUserService::class.java)
+    private val logger = LoggerFactory.getLogger(CtcUserService::class.java)
 
     @Transactional(readOnly = true)
     override fun loadUserByUsername(username: String?): UserDetails {

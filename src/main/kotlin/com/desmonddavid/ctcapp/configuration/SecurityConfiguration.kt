@@ -1,6 +1,6 @@
 package com.desmonddavid.ctcapp.configuration
 
-import com.desmonddavid.ctcapp.services.DigitUserService
+import com.desmonddavid.ctcapp.services.CtcUserService
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
@@ -9,10 +9,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 
 @EnableWebSecurity
-class SecurityConfiguration(val digitUserService: DigitUserService) : WebSecurityConfigurerAdapter() {
+class SecurityConfiguration(val ctcUserService: CtcUserService) : WebSecurityConfigurerAdapter() {
 
     override fun configure(auth: AuthenticationManagerBuilder) {
-        auth.userDetailsService(digitUserService).passwordEncoder(passwordEncoder())
+        auth.userDetailsService(ctcUserService).passwordEncoder(passwordEncoder())
     }
 
     override fun configure(http: HttpSecurity) {
