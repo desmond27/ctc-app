@@ -3,7 +3,7 @@ package com.desmonddavid.ctcapp.entities
 import javax.persistence.*
 
 @Entity
-data class DigitUser(
+data class CtcUser(
     @Id
     @Column(unique = true, nullable = false, length = 30)
     val username: String,
@@ -16,7 +16,7 @@ data class DigitUser(
 
     @OneToMany(fetch= FetchType.LAZY)
     @JoinColumn(name = "username", referencedColumnName = "username")
-    val roles: MutableSet<DigitUserRole>
+    val roles: MutableSet<CtcUserRole>
 ) {
     override fun toString(): String {
         return "DigitUser(username='$username', password='$password', enabled=$enabled)"
@@ -24,7 +24,7 @@ data class DigitUser(
 }
 
 @Entity
-data class DigitUserRole(
+data class CtcUserRole(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val userRoleId: Int,

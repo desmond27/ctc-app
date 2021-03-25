@@ -1,6 +1,6 @@
 package com.desmonddavid.ctcapp
 
-import com.desmonddavid.ctcapp.repositories.DigitUserRepository
+import com.desmonddavid.ctcapp.repositories.CtcUserRepository
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.DisplayName
@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest
 @SpringBootTest
 class CtcApplicationTests(
 	@Autowired
-	val digitUserRepository: DigitUserRepository
+	val ctcUserRepository: CtcUserRepository
 ) {
 
 	@Test
@@ -22,7 +22,7 @@ class CtcApplicationTests(
 	@Test
 	@DisplayName("Test reading values from the user table")
 	fun digitUserRepositoryTest() {
-		val digitUser = digitUserRepository.findById("desmond").get()
+		val digitUser = ctcUserRepository.findById("desmond").get()
 		assertNotNull(digitUser)
 		println(digitUser.username)
 	}

@@ -1,13 +1,13 @@
 package com.desmonddavid.ctcapp.repositories
 
-import com.desmonddavid.ctcapp.entities.DigitUser
-import com.desmonddavid.ctcapp.entities.DigitUserRole
+import com.desmonddavid.ctcapp.entities.CtcUser
+import com.desmonddavid.ctcapp.entities.CtcUserRole
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface DigitUserRepository: JpaRepository<DigitUser, String> {
-    fun findByUsername(username: String): DigitUser
+interface CtcUserRepository: JpaRepository<CtcUser, String> {
+    fun findByUsername(username: String): CtcUser
 }
 
-interface DigitUserRoleRepository: JpaRepository<DigitUserRole, Int> {
+interface CtcUserRoleRepository: JpaRepository<CtcUserRole, Int> {
 
 }
